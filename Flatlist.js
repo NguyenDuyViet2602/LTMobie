@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet,FlatList } from 'react-native';
+import { View, Text, StyleSheet,fl } from 'react-native';
 import { SafeAreaView } from 'react-native-web';
 
 const Flaslist = () => {

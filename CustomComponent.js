@@ -1,34 +1,25 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Button, StyleSheet, Text, View } from "react-native";
+import { TextInput } from "react-native";
+import TextBox from "./component/TextBox";
 
-const App = () => {
+export default function App() {
   return (
-    <View style={styles.wrapper}>
     <View style={styles.container}>
-      <Text style={styles.text}>Hello, world</Text>
-    </View>
+      <TextBox
+        backgroundColor={"blue"}
+        content={"Hello world"}
+        textColor={"#fff"}
+      />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
-  wrapper: {
-    flex:1,
-    justifyContent: 'center',
-    alignItems: 'center'   
-  },
   container: {
-    width: 100, 
-    height: 100,
-    backgroundColor: 'blue', 
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
+    display: "flex",
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
-  text: {
-    color: 'white',
-    fontSize: 16 
-  }
 });
-
-export default App;
